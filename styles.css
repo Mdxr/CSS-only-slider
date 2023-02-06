@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  color: black;
+  background-color: white;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  scroll-behavior: smooth;
+}
+.slider {
+  display: inline-flex;
+}
+.slide {
+  background: linear-gradient(aqua, grey);
+  width: 100vw;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  transition: 0.5s linear;
+}
+.slide h1 {
+  font-weight: 400;
+}
+
+.buttons {
+  display: inline-flex;
+}
+.button {
+  width: 100vw;
+  height: 35vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+a {
+  margin: 1rem;
+  color: #2f2f2f;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s linear;
+  padding: 0.5rem 1rem;
+  border: 1px solid lightgray;
+  background-color: #efefef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#slide-1 {
+  background: linear-gradient(red, lightblue);
+}
+#slide-2 {
+  background: linear-gradient(red, purple);
+}
+#slide-3 {
+  background: linear-gradient(red, skyblue);
+}
+#slide-4 {
+  background: linear-gradient(red, orange);
+}
+#slide-5 {
+  background: linear-gradient(red, darkred);
+}
+
+a:hover {
+  transform: translateY(-0.1rem);
+  box-shadow: 0 5px 10px lightgrey;
+  background-color: #2f2f2f;
+  color: white;
+}
