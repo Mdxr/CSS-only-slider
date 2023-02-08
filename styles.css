@@ -1,5 +1,12 @@
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+:not(#buttons) {
+  scroll-behavior: smooth;
+}
+:not(.button) {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -10,7 +17,6 @@ body {
   overflow: hidden;
   width: 100vw;
   height: 100vh;
-  scroll-behavior: smooth;
 }
 .slider {
   display: inline-flex;
@@ -28,7 +34,7 @@ body {
   font-weight: 400;
 }
 
-.buttons {
+#buttons {
   display: inline-flex;
 }
 .button {
@@ -43,13 +49,13 @@ a {
   color: #2f2f2f;
   font-weight: 600;
   text-decoration: none;
-  transition: 0.3s linear;
   padding: 0.5rem 1rem;
   border: 1px solid lightgray;
   background-color: #efefef;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.3s linear;
 }
 #slide-1 {
   background: linear-gradient(red, lightblue);
